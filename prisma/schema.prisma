@@ -1,0 +1,136 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Subject {
+  PHYSICS
+  CHEMISTRY
+  BOTANY
+  ZOOLOGY
+}
+
+enum Difficulty {
+  EASY
+  MEDIUM
+  HARD
+}
+
+enum Role {
+  STUDENT
+  ADMIN
+}
+
+enum AttemptStatus {
+  IN_PROGRESS
+  SUBMITTED
+  TIMED_OUT
+}
+
+model User {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  name         String
+  passwordHash String
+  role         Role     @default(STUDENT)
+  createdAt    DateTime @default(now())
+
+  attempts    TestAttempt[]
+  performance SubjectPerformance[]
+
+  @@index([email])
+}
+
+model Question {
+  id            String     @id @default(cuid())
+  subject       Subject
+  chapter       String
+  concept       String
+  year          Int?
+  difficulty    Difficulty
+  questionText  String
+  optionA       String
+  optionB       String
+  optionC       String
+  optionD       String
+  correctOption String
+  explanation   String?
+  tags          String[]
+  isActive      Boolean    @default(true)
+  createdAt     DateTime   @default(now())
+  updatedAt     DateTime   @updatedAt
+
+  attemptAnswers AttemptAnswer[]
+
+  @@index([subject, chapter])
+  @@index([year])
+  @@index([difficulty])
+  @@index([subject, difficulty, isActive])
+}
+
+model TestAttempt {
+  id            String        @id @default(cuid())
+  userId        String
+  user          User          @relation(fields: [userId], references: [id])
+  status        AttemptStatus @default(IN_PROGRESS)
+  startedAt     DateTime      @default(now())
+  submittedAt   DateTime?
+  totalScore    Int?
+  maxScore      Int           @default(720)
+  timeTakenSecs Int?
+
+  answers        AttemptAnswer[]
+  scoreBreakdown ScoreBreakdown[]
+
+  @@index([userId, status])
+  @@index([userId, startedAt])
+}
+
+model AttemptAnswer {
+  id              String      @id @default(cuid())
+  attemptId       String
+  attempt         TestAttempt @relation(fields: [attemptId], references: [id], onDelete: Cascade)
+  questionId      String
+  question        Question    @relation(fields: [questionId], references: [id])
+  selectedOption  String?
+  isCorrect       Boolean?
+  markedForReview Boolean     @default(false)
+  score           Int         @default(0)
+
+  @@unique([attemptId, questionId])
+  @@index([attemptId])
+}
+
+model ScoreBreakdown {
+  id             String      @id @default(cuid())
+  attemptId      String
+  attempt        TestAttempt @relation(fields: [attemptId], references: [id], onDelete: Cascade)
+  subject        Subject
+  totalQuestions Int
+  attempted      Int
+  correct        Int
+  incorrect      Int
+  score          Int
+  accuracy       Float
+
+  @@unique([attemptId, subject])
+}
+
+model SubjectPerformance {
+  id             String   @id @default(cuid())
+  userId         String
+  user           User     @relation(fields: [userId], references: [id])
+  subject        Subject
+  chapter        String
+  totalAttempted Int      @default(0)
+  totalCorrect   Int      @default(0)
+  accuracy       Float    @default(0)
+  lastUpdated    DateTime @updatedAt
+
+  @@unique([userId, subject, chapter])
+  @@index([userId, accuracy])
+}

@@ -1,0 +1,943 @@
+export const botanyQuestions = [
+  // ─── PLANT KINGDOM ────────────────────────────────────────────────────────
+  {
+    subject: "BOTANY" as const,
+    chapter: "Plant Kingdom",
+    concept: "Classification of Algae",
+    year: 2016,
+    difficulty: "EASY" as const,
+    questionText:
+      "Chlorella and Spirogyra belong to which division of algae?",
+    optionA: "Phaeophyceae",
+    optionB: "Rhodophyceae",
+    optionC: "Chlorophyceae",
+    optionD: "Chrysophyceae",
+    correctOption: "C" as const,
+    explanation:
+      "Chlorella and Spirogyra are green algae (Chlorophyceae). They contain chlorophyll a and b, and store food as starch.",
+    tags: ["plant kingdom", "algae", "Chlorophyceae"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Plant Kingdom",
+    concept: "Alternation of generations",
+    year: 2019,
+    difficulty: "MEDIUM" as const,
+    questionText:
+      "In which plant group is the sporophyte generation completely dependent on the gametophyte?",
+    optionA: "Gymnosperms",
+    optionB: "Angiosperms",
+    optionC: "Pteridophytes",
+    optionD: "Bryophytes",
+    correctOption: "D" as const,
+    explanation:
+      "Bryophytes (mosses, liverworts) are the 'amphibians of the plant kingdom.' The dominant phase is gametophyte, and the sporophyte is completely dependent on the gametophyte for nutrition.",
+    tags: ["plant kingdom", "bryophytes", "alternation of generations"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Plant Kingdom",
+    concept: "Gymnosperms",
+    year: 2021,
+    difficulty: "EASY" as const,
+    questionText:
+      "Pinus belongs to which division?",
+    optionA: "Bryophyta",
+    optionB: "Pteridophyta",
+    optionC: "Gymnospermae",
+    optionD: "Angiospermae",
+    correctOption: "C" as const,
+    explanation:
+      "Pinus is a gymnosperm. Gymnosperms are naked-seed plants; their ovules are borne on megasporophylls that are not enclosed in an ovary.",
+    tags: ["plant kingdom", "gymnosperms", "Pinus"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Plant Kingdom",
+    concept: "Lichen",
+    year: null,
+    difficulty: "EASY" as const,
+    questionText:
+      "Lichen is a symbiotic association between:",
+    optionA: "Algae and bryophytes",
+    optionB: "Fungi and algae (or cyanobacteria)",
+    optionC: "Fungi and bacteria",
+    optionD: "Algae and higher plants",
+    correctOption: "B" as const,
+    explanation:
+      "Lichen is a mutualistic association between fungi (mycobiont) and algae or cyanobacteria (photobiont). The fungus provides shelter and minerals; the alga provides food by photosynthesis.",
+    tags: ["plant kingdom", "lichen", "symbiosis"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Plant Kingdom",
+    concept: "Reproduction in algae",
+    year: 2018,
+    difficulty: "MEDIUM" as const,
+    questionText:
+      "Kelp belongs to which division of algae and is known for its large size?",
+    optionA: "Chlorophyceae",
+    optionB: "Phaeophyceae (brown algae)",
+    optionC: "Rhodophyceae",
+    optionD: "Cyanophyceae",
+    correctOption: "B" as const,
+    explanation:
+      "Kelp is a large brown alga belonging to Phaeophyceae. Brown algae contain chlorophyll a, c and fucoxanthin, which gives them the brown colour.",
+    tags: ["plant kingdom", "algae", "Phaeophyceae", "kelp"],
+  },
+
+  // ─── MORPHOLOGY OF FLOWERING PLANTS ──────────────────────────────────────
+  {
+    subject: "BOTANY" as const,
+    chapter: "Morphology of Flowering Plants",
+    concept: "Root modifications",
+    year: 2017,
+    difficulty: "EASY" as const,
+    questionText:
+      "Prop roots in Banyan tree (Ficus benghalensis) are:",
+    optionA: "Taproot modifications for food storage",
+    optionB: "Adventitious roots providing mechanical support",
+    optionC: "Respiratory roots",
+    optionD: "Parasitic roots",
+    correctOption: "B" as const,
+    explanation:
+      "Prop (pillar) roots in Banyan are adventitious roots that arise from aerial stems and grow downward into the soil, providing additional mechanical support to the large horizontal branches.",
+    tags: ["morphology", "root modifications", "adventitious roots", "Banyan"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Morphology of Flowering Plants",
+    concept: "Leaf modifications",
+    year: 2020,
+    difficulty: "MEDIUM" as const,
+    questionText:
+      "In Opuntia (cactus), the leaves are modified into spines to:",
+    optionA: "Increase photosynthesis",
+    optionB: "Reduce transpiration and provide protection",
+    optionC: "Absorb water",
+    optionD: "Store starch",
+    correctOption: "B" as const,
+    explanation:
+      "In xerophytes like Opuntia, leaves are modified into spines to reduce the surface area for transpiration (water loss) and provide protection from herbivores. Photosynthesis is performed by the green fleshy stem.",
+    tags: ["morphology", "leaf modifications", "xerophytes", "cactus"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Morphology of Flowering Plants",
+    concept: "Flower parts",
+    year: 2022,
+    difficulty: "EASY" as const,
+    questionText:
+      "The edible part of a mango is the:",
+    optionA: "Epicarp",
+    optionB: "Mesocarp",
+    optionC: "Endocarp",
+    optionD: "Seed",
+    correctOption: "B" as const,
+    explanation:
+      "Mango is a drupe. The pericarp has three layers: epicarp (skin), mesocarp (fleshy, edible), and endocarp (hard stone enclosing seed).",
+    tags: ["morphology", "fruit", "drupe", "mango"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Morphology of Flowering Plants",
+    concept: "Inflorescence",
+    year: null,
+    difficulty: "MEDIUM" as const,
+    questionText:
+      "The type of inflorescence found in wheat is:",
+    optionA: "Raceme",
+    optionB: "Spike",
+    optionC: "Spadix",
+    optionD: "Capitulum",
+    correctOption: "B" as const,
+    explanation:
+      "Wheat (Triticum) has a spike inflorescence – an unbranched racemose inflorescence with sessile flowers attached directly to the main axis.",
+    tags: ["morphology", "inflorescence", "spike", "wheat"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Morphology of Flowering Plants",
+    concept: "Stem modifications",
+    year: 2023,
+    difficulty: "EASY" as const,
+    questionText:
+      "Ginger (Zingiber officinale) is a:",
+    optionA: "Root",
+    optionB: "Rhizome (underground stem)",
+    optionC: "Bulb",
+    optionD: "Corm",
+    correctOption: "B" as const,
+    explanation:
+      "Ginger is a rhizome – a modified underground stem. It has nodes, internodes, scale leaves, and buds. Being a stem, it can give rise to shoots.",
+    tags: ["morphology", "stem modifications", "rhizome", "ginger"],
+  },
+
+  // ─── ANATOMY OF FLOWERING PLANTS ─────────────────────────────────────────
+  {
+    subject: "BOTANY" as const,
+    chapter: "Anatomy of Flowering Plants",
+    concept: "Meristematic tissue",
+    year: 2018,
+    difficulty: "EASY" as const,
+    questionText:
+      "The region of cell division in the root tip is the:",
+    optionA: "Region of maturation",
+    optionB: "Root cap",
+    optionC: "Meristematic zone",
+    optionD: "Region of elongation",
+    correctOption: "C" as const,
+    explanation:
+      "The meristematic zone (just behind root cap) contains actively dividing cells. Cells here are small, thin-walled, and have large nuclei. The root cap protects the tip.",
+    tags: ["anatomy", "root tip", "meristematic tissue", "cell division"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Anatomy of Flowering Plants",
+    concept: "Vascular bundle – dicot stem",
+    year: 2021,
+    difficulty: "MEDIUM" as const,
+    questionText:
+      "In the vascular bundle of a dicot stem, cambium is present between xylem and phloem. This type of bundle is called:",
+    optionA: "Closed",
+    optionB: "Open",
+    optionC: "Collateral",
+    optionD: "Amphicribal",
+    correctOption: "B" as const,
+    explanation:
+      "Vascular bundles with cambium between xylem and phloem are 'open' (capable of secondary growth). Monocot bundles lack cambium and are 'closed'.",
+    tags: ["anatomy", "vascular bundle", "dicot stem", "cambium"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Anatomy of Flowering Plants",
+    concept: "Cork cambium",
+    year: 2016,
+    difficulty: "MEDIUM" as const,
+    questionText:
+      "The bark of a tree consists of all tissues external to the:",
+    optionA: "Epidermis",
+    optionB: "Cork cambium (phellogen)",
+    optionC: "Vascular cambium",
+    optionD: "Pith",
+    correctOption: "C" as const,
+    explanation:
+      "Bark = all tissues outside the vascular cambium, including phloem, pericycle, cortex, and periderm (cork). The vascular cambium is the reference point.",
+    tags: ["anatomy", "bark", "secondary growth", "vascular cambium"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Anatomy of Flowering Plants",
+    concept: "Stomata",
+    year: 2024,
+    difficulty: "EASY" as const,
+    questionText:
+      "Guard cells surround the stomatal pore. These cells are different from other epidermal cells because they:",
+    optionA: "Lack chloroplasts",
+    optionB: "Contain chloroplasts and can perform photosynthesis",
+    optionC: "Have no cell wall",
+    optionD: "Are dead at maturity",
+    correctOption: "B" as const,
+    explanation:
+      "Guard cells are unique among epidermal cells in possessing chloroplasts. They can perform photosynthesis, producing sugar that drives osmosis for stomatal opening.",
+    tags: ["anatomy", "stomata", "guard cells", "chloroplasts"],
+  },
+
+  // ─── CELL BIOLOGY ─────────────────────────────────────────────────────────
+  {
+    subject: "BOTANY" as const,
+    chapter: "Cell Biology",
+    concept: "Cell organelles – chloroplast",
+    year: 2019,
+    difficulty: "EASY" as const,
+    questionText:
+      "The site of the dark reaction (Calvin cycle) of photosynthesis is:",
+    optionA: "Thylakoid membrane",
+    optionB: "Outer membrane of chloroplast",
+    optionC: "Stroma of chloroplast",
+    optionD: "Cytoplasm",
+    correctOption: "C" as const,
+    explanation:
+      "The Calvin cycle (dark/light-independent reactions) occurs in the stroma of the chloroplast. The light reactions occur in the thylakoid membranes (grana).",
+    tags: ["cell biology", "chloroplast", "Calvin cycle", "stroma"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Cell Biology",
+    concept: "Mitosis",
+    year: 2020,
+    difficulty: "MEDIUM" as const,
+    questionText:
+      "During which phase of mitosis do chromatids separate and move to opposite poles?",
+    optionA: "Prophase",
+    optionB: "Metaphase",
+    optionC: "Anaphase",
+    optionD: "Telophase",
+    correctOption: "C" as const,
+    explanation:
+      "In anaphase, centromeres split and sister chromatids (now called chromosomes) are pulled to opposite poles by spindle fibers. Cell appears V or I shaped.",
+    tags: ["cell biology", "mitosis", "anaphase", "cell division"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Cell Biology",
+    concept: "Cell membrane",
+    year: 2022,
+    difficulty: "MEDIUM" as const,
+    questionText:
+      "The fluid mosaic model of cell membrane was proposed by:",
+    optionA: "Davson and Danielli",
+    optionB: "Singer and Nicolson",
+    optionC: "Watson and Crick",
+    optionD: "Robert Brown",
+    correctOption: "B" as const,
+    explanation:
+      "The fluid mosaic model was proposed by Singer and Nicolson (1972). It describes the membrane as a fluid phospholipid bilayer with proteins embedded (integral) or attached (peripheral).",
+    tags: ["cell biology", "fluid mosaic model", "cell membrane", "Singer Nicolson"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Cell Biology",
+    concept: "Endoplasmic reticulum",
+    year: 2017,
+    difficulty: "EASY" as const,
+    questionText:
+      "Ribosomes attached to the rough endoplasmic reticulum (RER) are responsible for:",
+    optionA: "Lipid synthesis",
+    optionB: "Protein synthesis",
+    optionC: "ATP production",
+    optionD: "DNA replication",
+    correctOption: "B" as const,
+    explanation:
+      "Ribosomes on the RER synthesize proteins destined for secretion or membrane insertion. SER lacks ribosomes and is involved in lipid/steroid synthesis and detoxification.",
+    tags: ["cell biology", "RER", "ribosomes", "protein synthesis"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Cell Biology",
+    concept: "Meiosis",
+    year: 2021,
+    difficulty: "HARD" as const,
+    questionText:
+      "Crossing over (recombination) between non-sister chromatids occurs during:",
+    optionA: "Leptotene",
+    optionB: "Zygotene",
+    optionC: "Pachytene",
+    optionD: "Diplotene",
+    correctOption: "C" as const,
+    explanation:
+      "Crossing over occurs during pachytene stage of meiosis I prophase. Bivalents (tetrads) are fully formed, and chromatids of homologous chromosomes exchange segments at chiasmata.",
+    tags: ["cell biology", "meiosis", "crossing over", "pachytene"],
+  },
+
+  // ─── PHOTOSYNTHESIS ───────────────────────────────────────────────────────
+  {
+    subject: "BOTANY" as const,
+    chapter: "Photosynthesis",
+    concept: "Light reactions",
+    year: 2018,
+    difficulty: "MEDIUM" as const,
+    questionText:
+      "In the light reactions of photosynthesis, photolysis of water releases:",
+    optionA: "CO₂ and H₂",
+    optionB: "O₂, H⁺ and electrons",
+    optionC: "H₂O₂",
+    optionD: "ATP only",
+    correctOption: "B" as const,
+    explanation:
+      "Photolysis: 2H₂O → 4H⁺ + 4e⁻ + O₂. The oxygen is released as a by-product, electrons replace those lost by P680 (PS II), and H⁺ contributes to the proton gradient for ATP synthesis.",
+    tags: ["photosynthesis", "light reactions", "photolysis", "oxygen evolution"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Photosynthesis",
+    concept: "Calvin cycle",
+    year: 2023,
+    difficulty: "MEDIUM" as const,
+    questionText:
+      "The primary CO₂ acceptor in the Calvin cycle (C3 pathway) is:",
+    optionA: "Pyruvate",
+    optionB: "Phosphoenolpyruvate (PEP)",
+    optionC: "Ribulose-1,5-bisphosphate (RuBP)",
+    optionD: "Oxaloacetate",
+    correctOption: "C" as const,
+    explanation:
+      "In the C3 pathway, CO₂ is fixed by RuBisCO onto RuBP (ribulose bisphosphate) to form two molecules of 3-phosphoglycerate (3-PGA), a 3-carbon compound.",
+    tags: ["photosynthesis", "Calvin cycle", "RuBP", "CO2 fixation"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Photosynthesis",
+    concept: "C4 pathway",
+    year: 2019,
+    difficulty: "HARD" as const,
+    questionText:
+      "In C4 plants, the initial CO₂ acceptor in mesophyll cells is:",
+    optionA: "RuBP",
+    optionB: "PEP (phosphoenolpyruvate)",
+    optionC: "Oxaloacetate",
+    optionD: "Malate",
+    correctOption: "B" as const,
+    explanation:
+      "In C4 plants (e.g., sugarcane, maize), PEP in mesophyll cells is carboxylated by PEP carboxylase to form oxaloacetate (4C). CO₂ is then concentrated in bundle sheath cells for the Calvin cycle.",
+    tags: ["photosynthesis", "C4 pathway", "PEP", "Hatch-Slack"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Photosynthesis",
+    concept: "Photosystems",
+    year: 2016,
+    difficulty: "MEDIUM" as const,
+    questionText:
+      "Which photosystem absorbs light at 700 nm and is involved in cyclic photophosphorylation?",
+    optionA: "Photosystem I (P700)",
+    optionB: "Photosystem II (P680)",
+    optionC: "Both PS I and PS II",
+    optionD: "Neither",
+    correctOption: "A" as const,
+    explanation:
+      "PS I (P700, absorbs 700 nm) is the only photosystem active in cyclic photophosphorylation. Electrons cycle back from ferredoxin to the cytochrome b6f complex, generating ATP without NADPH or O₂.",
+    tags: ["photosynthesis", "cyclic photophosphorylation", "PS I", "P700"],
+  },
+
+  // ─── RESPIRATION IN PLANTS ────────────────────────────────────────────────
+  {
+    subject: "BOTANY" as const,
+    chapter: "Respiration in Plants",
+    concept: "Glycolysis",
+    year: 2020,
+    difficulty: "EASY" as const,
+    questionText:
+      "Glycolysis occurs in the:",
+    optionA: "Mitochondrial matrix",
+    optionB: "Chloroplast",
+    optionC: "Cytoplasm (cytosol)",
+    optionD: "Nucleus",
+    correctOption: "C" as const,
+    explanation:
+      "Glycolysis (Embden-Meyerhof-Parnas pathway) occurs in the cytoplasm/cytosol and converts 1 glucose → 2 pyruvate + 2 ATP (net) + 2 NADH.",
+    tags: ["respiration", "glycolysis", "cytoplasm"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Respiration in Plants",
+    concept: "Krebs cycle",
+    year: 2022,
+    difficulty: "MEDIUM" as const,
+    questionText:
+      "The Krebs cycle (citric acid cycle) is located in the:",
+    optionA: "Cytoplasm",
+    optionB: "Outer mitochondrial membrane",
+    optionC: "Mitochondrial matrix",
+    optionD: "Inner mitochondrial membrane",
+    correctOption: "C" as const,
+    explanation:
+      "The Krebs cycle occurs in the mitochondrial matrix. Pyruvate enters the matrix where it is converted to acetyl-CoA before entering the cycle.",
+    tags: ["respiration", "Krebs cycle", "mitochondria", "matrix"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Respiration in Plants",
+    concept: "Fermentation",
+    year: 2017,
+    difficulty: "EASY" as const,
+    questionText:
+      "During anaerobic fermentation in yeast, glucose is converted to:",
+    optionA: "Lactic acid and CO₂",
+    optionB: "Ethanol and CO₂",
+    optionC: "Ethanol and H₂O",
+    optionD: "Pyruvate and O₂",
+    correctOption: "B" as const,
+    explanation:
+      "In yeast (alcoholic fermentation): Glucose → 2 Pyruvate → 2 Acetaldehyde + 2CO₂ → 2 Ethanol. This regenerates NAD⁺ for continued glycolysis.",
+    tags: ["respiration", "fermentation", "yeast", "ethanol"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Respiration in Plants",
+    concept: "Respiratory quotient",
+    year: null,
+    difficulty: "MEDIUM" as const,
+    questionText:
+      "The respiratory quotient (RQ) for complete oxidation of glucose is:",
+    optionA: "0.7",
+    optionB: "0.8",
+    optionC: "1.0",
+    optionD: ">1",
+    correctOption: "C" as const,
+    explanation:
+      "RQ = CO₂ released / O₂ consumed. For glucose: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O. RQ = 6/6 = 1.0.",
+    tags: ["respiration", "RQ", "respiratory quotient", "glucose"],
+  },
+
+  // ─── PLANT GROWTH ─────────────────────────────────────────────────────────
+  {
+    subject: "BOTANY" as const,
+    chapter: "Plant Growth",
+    concept: "Auxins",
+    year: 2019,
+    difficulty: "EASY" as const,
+    questionText:
+      "Auxin (IAA) promotes phototropism. Phototropism is a response to:",
+    optionA: "Gravity",
+    optionB: "Light",
+    optionC: "Water",
+    optionD: "Touch",
+    correctOption: "B" as const,
+    explanation:
+      "Phototropism is bending towards or away from light. Auxin migrates to the shaded side, promoting more cell elongation there, causing the shoot to bend toward light (positive phototropism).",
+    tags: ["plant growth", "auxins", "phototropism", "IAA"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Plant Growth",
+    concept: "Gibberellins",
+    year: 2021,
+    difficulty: "MEDIUM" as const,
+    questionText:
+      "Gibberellins are known to promote:",
+    optionA: "Root elongation and lateral root development",
+    optionB: "Stem elongation and breaking of dormancy",
+    optionC: "Leaf senescence and abscission",
+    optionD: "Stomatal closure during drought",
+    correctOption: "B" as const,
+    explanation:
+      "Gibberellins (GAs) promote internode elongation (bolting in rosette plants), break dormancy of seeds and buds, and stimulate fruit development. First isolated from the fungus Gibberella fujikuroi.",
+    tags: ["plant growth", "gibberellins", "stem elongation", "dormancy"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Plant Growth",
+    concept: "Abscisic acid",
+    year: 2023,
+    difficulty: "MEDIUM" as const,
+    questionText:
+      "Abscisic acid (ABA) is called the 'stress hormone' because it:",
+    optionA: "Promotes growth under stress",
+    optionB: "Causes stomatal closure under water deficit and promotes seed dormancy",
+    optionC: "Stimulates cell division",
+    optionD: "Promotes fruit ripening",
+    correctOption: "B" as const,
+    explanation:
+      "ABA is induced by drought stress, causing stomatal closure to reduce water loss. It also promotes seed dormancy and inhibits germination, acting as a general growth inhibitor.",
+    tags: ["plant growth", "ABA", "abscisic acid", "stress hormone"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Plant Growth",
+    concept: "Seed germination",
+    year: null,
+    difficulty: "EASY" as const,
+    questionText:
+      "The process by which a seed develops into a seedling is called:",
+    optionA: "Fertilization",
+    optionB: "Germination",
+    optionC: "Pollination",
+    optionD: "Dormancy",
+    correctOption: "B" as const,
+    explanation:
+      "Germination is the resumption of growth of the embryo in a seed after a period of dormancy. It requires water, suitable temperature, and oxygen.",
+    tags: ["plant growth", "germination", "seed"],
+  },
+
+  // ─── MOLECULAR BASIS OF INHERITANCE ──────────────────────────────────────
+  {
+    subject: "BOTANY" as const,
+    chapter: "Molecular Basis of Inheritance",
+    concept: "DNA structure",
+    year: 2020,
+    difficulty: "EASY" as const,
+    questionText:
+      "In a double-stranded DNA molecule, if the percentage of adenine is 20%, the percentage of guanine is:",
+    optionA: "20%",
+    optionB: "30%",
+    optionC: "40%",
+    optionD: "10%",
+    correctOption: "B" as const,
+    explanation:
+      "By Chargaff's rules: A = T and G = C. If A = 20%, T = 20%; A+T = 40%, so G+C = 60%, meaning G = C = 30%.",
+    tags: ["molecular biology", "DNA", "Chargaff's rules", "base pairing"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Molecular Basis of Inheritance",
+    concept: "Transcription",
+    year: 2022,
+    difficulty: "MEDIUM" as const,
+    questionText:
+      "In prokaryotic transcription, the enzyme responsible for RNA synthesis is:",
+    optionA: "DNA polymerase",
+    optionB: "RNA polymerase",
+    optionC: "Ligase",
+    optionD: "Reverse transcriptase",
+    correctOption: "B" as const,
+    explanation:
+      "RNA polymerase catalyzes transcription – the synthesis of RNA from a DNA template. In prokaryotes, there is only one type of RNA polymerase for all RNA types.",
+    tags: ["molecular biology", "transcription", "RNA polymerase"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Molecular Basis of Inheritance",
+    concept: "Translation",
+    year: 2019,
+    difficulty: "MEDIUM" as const,
+    questionText:
+      "The genetic code is said to be 'degenerate' because:",
+    optionA: "One amino acid is coded by many codons",
+    optionB: "One codon codes for many amino acids",
+    optionC: "Some codons are non-functional",
+    optionD: "The code is the same in all organisms",
+    correctOption: "A" as const,
+    explanation:
+      "Degeneracy means multiple codons can code for the same amino acid (e.g., leucine has 6 codons). There are 64 codons but only 20 amino acids + 3 stop codons.",
+    tags: ["molecular biology", "genetic code", "degeneracy", "codons"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Molecular Basis of Inheritance",
+    concept: "DNA replication",
+    year: 2024,
+    difficulty: "HARD" as const,
+    questionText:
+      "Okazaki fragments are formed during DNA replication on the:",
+    optionA: "Leading strand in 5'→3' direction",
+    optionB: "Lagging strand in 5'→3' direction",
+    optionC: "Both strands simultaneously",
+    optionD: "Template strand only",
+    correctOption: "B" as const,
+    explanation:
+      "DNA polymerase can only synthesize in 5'→3' direction. On the lagging strand (antiparallel), synthesis occurs discontinuously in short Okazaki fragments, each synthesized 5'→3'.",
+    tags: ["molecular biology", "DNA replication", "Okazaki fragments", "lagging strand"],
+  },
+
+  // ─── BIOTECHNOLOGY ────────────────────────────────────────────────────────
+  {
+    subject: "BOTANY" as const,
+    chapter: "Biotechnology",
+    concept: "Restriction enzymes",
+    year: 2018,
+    difficulty: "MEDIUM" as const,
+    questionText:
+      "Restriction endonucleases are used in recombinant DNA technology to:",
+    optionA: "Join DNA fragments",
+    optionB: "Cut DNA at specific sequences",
+    optionC: "Replicate DNA in vitro",
+    optionD: "Transcribe DNA to RNA",
+    correctOption: "B" as const,
+    explanation:
+      "Restriction endonucleases (restriction enzymes) are molecular scissors that cut dsDNA at specific palindromic sequences (restriction sites). EcoRI cuts at 5'-GAATTC-3'.",
+    tags: ["biotechnology", "restriction enzymes", "recombinant DNA", "molecular scissors"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Biotechnology",
+    concept: "PCR",
+    year: 2021,
+    difficulty: "MEDIUM" as const,
+    questionText:
+      "In PCR (Polymerase Chain Reaction), the denaturation step involves:",
+    optionA: "Annealing of primers to template",
+    optionB: "Extension of DNA strand by Taq polymerase",
+    optionC: "Separation of double-stranded DNA by heating to ~94°C",
+    optionD: "Cooling to allow primer binding",
+    correctOption: "C" as const,
+    explanation:
+      "PCR has 3 steps: (1) Denaturation at ~94°C (dsDNA melts to ssDNA), (2) Annealing at ~50-65°C (primers bind), (3) Extension at ~72°C (Taq polymerase synthesizes new strand).",
+    tags: ["biotechnology", "PCR", "denaturation", "Taq polymerase"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Biotechnology",
+    concept: "Transgenic plants",
+    year: 2016,
+    difficulty: "HARD" as const,
+    questionText:
+      "Bt toxin used in genetically modified crops comes from:",
+    optionA: "Bacillus thuringiensis",
+    optionB: "Baculovirus",
+    optionC: "Agrobacterium tumefaciens",
+    optionD: "Rhizobium",
+    correctOption: "A" as const,
+    explanation:
+      "The cry (crystal protein) genes from Bacillus thuringiensis (Bt) are transferred into crop plants. The Bt toxin (delta endotoxin) forms pores in insect gut cells, killing the pest.",
+    tags: ["biotechnology", "Bt crops", "transgenic plants", "Bacillus thuringiensis"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Biotechnology",
+    concept: "Gene cloning",
+    year: 2023,
+    difficulty: "MEDIUM" as const,
+    questionText:
+      "The most common vector used for cloning in bacteria is:",
+    optionA: "Cosmid",
+    optionB: "BAC (Bacterial Artificial Chromosome)",
+    optionC: "Plasmid",
+    optionD: "Phage lambda",
+    correctOption: "C" as const,
+    explanation:
+      "Plasmids are the most commonly used vectors in bacterial gene cloning. They are small, circular, self-replicating extrachromosomal DNA molecules.",
+    tags: ["biotechnology", "gene cloning", "plasmid", "vector"],
+  },
+
+  // ─── ECOSYSTEM ────────────────────────────────────────────────────────────
+  {
+    subject: "BOTANY" as const,
+    chapter: "Ecosystem",
+    concept: "Ecological pyramids",
+    year: 2017,
+    difficulty: "MEDIUM" as const,
+    questionText:
+      "Which ecological pyramid is always upright (never inverted)?",
+    optionA: "Pyramid of numbers",
+    optionB: "Pyramid of biomass",
+    optionC: "Pyramid of energy",
+    optionD: "All pyramids can be inverted",
+    correctOption: "C" as const,
+    explanation:
+      "The pyramid of energy (productivity) is always upright because energy is lost as heat at each trophic level (~90% lost). Only ~10% is transferred upward (10% law).",
+    tags: ["ecosystem", "ecological pyramids", "energy flow", "10% law"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Ecosystem",
+    concept: "Biogeochemical cycles",
+    year: 2020,
+    difficulty: "MEDIUM" as const,
+    questionText:
+      "The largest reservoir of carbon on Earth is:",
+    optionA: "Atmosphere",
+    optionB: "Oceans",
+    optionC: "Terrestrial biomass",
+    optionD: "Fossil fuels",
+    correctOption: "B" as const,
+    explanation:
+      "Oceans hold the largest reservoir of carbon (~38,000 Pg C), primarily as dissolved inorganic carbon (bicarbonate). The atmosphere holds ~800 Pg C as CO₂.",
+    tags: ["ecosystem", "carbon cycle", "biogeochemical cycles"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Ecosystem",
+    concept: "Food chain",
+    year: null,
+    difficulty: "EASY" as const,
+    questionText:
+      "In a grassland ecosystem, the correct food chain is:",
+    optionA: "Grass → Frog → Snake → Hawk",
+    optionB: "Grass → Grasshopper → Frog → Snake → Hawk",
+    optionC: "Hawk → Snake → Frog → Grass",
+    optionD: "Grasshopper → Grass → Frog → Snake",
+    correctOption: "B" as const,
+    explanation:
+      "A typical grassland food chain: Grass (producer) → Grasshopper (primary consumer) → Frog (secondary consumer) → Snake (tertiary consumer) → Hawk (quaternary consumer).",
+    tags: ["ecosystem", "food chain", "trophic levels", "grassland"],
+  },
+
+  // ─── BIODIVERSITY ─────────────────────────────────────────────────────────
+  {
+    subject: "BOTANY" as const,
+    chapter: "Biodiversity",
+    concept: "Species diversity",
+    year: 2022,
+    difficulty: "MEDIUM" as const,
+    questionText:
+      "Which region is known as a 'biodiversity hotspot' due to exceptionally high species richness and endemism?",
+    optionA: "Tundra",
+    optionB: "Western Ghats of India",
+    optionC: "Sahara desert",
+    optionD: "Arctic region",
+    correctOption: "B" as const,
+    explanation:
+      "The Western Ghats is one of the world's 36 biodiversity hotspots. A hotspot is defined by high endemism (≥1500 endemic plant species) and significant habitat loss (>70% original vegetation lost).",
+    tags: ["biodiversity", "hotspot", "Western Ghats", "endemism"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Biodiversity",
+    concept: "Conservation",
+    year: 2024,
+    difficulty: "EASY" as const,
+    questionText:
+      "Ex-situ conservation involves protecting species:",
+    optionA: "In their natural habitat",
+    optionB: "Outside their natural habitat in artificial conditions",
+    optionC: "By reducing pollution",
+    optionD: "By creating national parks",
+    correctOption: "B" as const,
+    explanation:
+      "Ex-situ conservation = off-site conservation. Examples: botanical gardens, seed banks, zoological parks, gene banks. In-situ = national parks, biosphere reserves.",
+    tags: ["biodiversity", "conservation", "ex-situ", "in-situ"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Biodiversity",
+    concept: "IUCN categories",
+    year: 2019,
+    difficulty: "MEDIUM" as const,
+    questionText:
+      "An IUCN 'Critically Endangered' species faces the probability of extinction in the wild within:",
+    optionA: "100 years",
+    optionB: "50 years",
+    optionC: "10 years or 3 generations",
+    optionD: "200 years",
+    correctOption: "C" as const,
+    explanation:
+      "IUCN defines Critically Endangered (CR) as facing an extremely high risk of extinction, with ≥50% probability within 10 years or 3 generations (whichever is longer).",
+    tags: ["biodiversity", "IUCN", "critically endangered", "conservation"],
+  },
+
+  // ─── ADDITIONAL MIXED QUESTIONS ───────────────────────────────────────────
+  {
+    subject: "BOTANY" as const,
+    chapter: "Photosynthesis",
+    concept: "Photorespiration",
+    year: 2015,
+    difficulty: "HARD" as const,
+    questionText:
+      "Photorespiration in C3 plants is wasteful because:",
+    optionA: "It produces extra ATP",
+    optionB: "It involves oxidation of RuBP by O₂, releasing CO₂ without ATP synthesis",
+    optionC: "It consumes CO₂",
+    optionD: "It increases net photosynthesis",
+    correctOption: "B" as const,
+    explanation:
+      "Photorespiration (C2 cycle): RuBisCO acts as oxygenase, binding O₂ instead of CO₂. This produces phosphoglycolate (no ATP), wastes fixed carbon, and releases CO₂. C4 plants minimize photorespiration by concentrating CO₂.",
+    tags: ["photosynthesis", "photorespiration", "RuBisCO", "C3 plants"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Molecular Basis of Inheritance",
+    concept: "lac operon",
+    year: 2021,
+    difficulty: "HARD" as const,
+    questionText:
+      "In the lac operon of E. coli, transcription of structural genes occurs when:",
+    optionA: "Glucose is present and lactose is absent",
+    optionB: "Lactose is absent",
+    optionC: "Lactose (allolactose) is present and glucose is absent",
+    optionD: "The repressor is active",
+    correctOption: "C" as const,
+    explanation:
+      "The lac operon is induced when lactose is the sole carbon source. Allolactose (lactose derivative) acts as inducer, binding the repressor and preventing it from blocking the operator. Also requires cAMP-CAP (catabolite repression absent when glucose is low).",
+    tags: ["molecular biology", "lac operon", "gene regulation", "E. coli"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Cell Biology",
+    concept: "Tonoplast",
+    year: 2016,
+    difficulty: "EASY" as const,
+    questionText:
+      "The membrane surrounding the central vacuole in plant cells is called:",
+    optionA: "Plasma membrane",
+    optionB: "Tonoplast",
+    optionC: "Cell wall",
+    optionD: "Endoplasmic reticulum",
+    correctOption: "B" as const,
+    explanation:
+      "The tonoplast is the single membrane surrounding the central vacuole of plant cells. It regulates ion transport and maintains turgor pressure essential for cell rigidity.",
+    tags: ["cell biology", "vacuole", "tonoplast", "plant cell"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Anatomy of Flowering Plants",
+    concept: "Casparian strip",
+    year: 2023,
+    difficulty: "MEDIUM" as const,
+    questionText:
+      "The Casparian strip in the endodermis of roots forces water to pass through:",
+    optionA: "Cell wall pathway",
+    optionB: "Apoplast pathway",
+    optionC: "Symplast pathway (through cytoplasm)",
+    optionD: "Intercellular spaces",
+    correctOption: "C" as const,
+    explanation:
+      "The Casparian strip is a waterproof band of suberin in endodermal cell walls. It blocks apoplastic (cell wall) movement, forcing water and ions to pass through the protoplasm (symplast), allowing selective uptake.",
+    tags: ["anatomy", "Casparian strip", "endodermis", "water movement"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Ecosystem",
+    concept: "Decomposition",
+    year: 2018,
+    difficulty: "EASY" as const,
+    questionText:
+      "Organisms that break down dead organic matter and recycle nutrients are called:",
+    optionA: "Producers",
+    optionB: "Primary consumers",
+    optionC: "Decomposers",
+    optionD: "Carnivores",
+    correctOption: "C" as const,
+    explanation:
+      "Decomposers (saprotrophs) break down dead organic matter through extracellular digestion. Examples: bacteria and fungi. They return nutrients to the soil, completing biogeochemical cycles.",
+    tags: ["ecosystem", "decomposers", "nutrient cycling"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Plant Kingdom",
+    concept: "Pteridophytes",
+    year: 2014,
+    difficulty: "EASY" as const,
+    questionText:
+      "Ferns (pteridophytes) are considered 'vascular cryptogams' because they:",
+    optionA: "Lack seeds and vascular tissue",
+    optionB: "Have vascular tissue but reproduce by spores, not seeds",
+    optionC: "Have seeds but no vascular tissue",
+    optionD: "Are microscopic",
+    correctOption: "B" as const,
+    explanation:
+      "Pteridophytes (ferns, horsetails, clubmosses) were the first land plants to develop vascular tissue (xylem and phloem), but they reproduce by spores rather than seeds (hence cryptogams).",
+    tags: ["plant kingdom", "pteridophytes", "vascular plants", "spores"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Biotechnology",
+    concept: "Golden Rice",
+    year: 2020,
+    difficulty: "MEDIUM" as const,
+    questionText:
+      "Golden Rice was developed to address deficiency of:",
+    optionA: "Iron",
+    optionB: "Vitamin C",
+    optionC: "Vitamin A (β-carotene precursor)",
+    optionD: "Zinc",
+    correctOption: "C" as const,
+    explanation:
+      "Golden Rice was genetically engineered to produce β-carotene (provitamin A) in the endosperm, giving it a golden color. It was developed to combat vitamin A deficiency in developing countries.",
+    tags: ["biotechnology", "Golden Rice", "vitamin A", "beta carotene", "transgenic"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Morphology of Flowering Plants",
+    concept: "Placentation",
+    year: 2022,
+    difficulty: "MEDIUM" as const,
+    questionText:
+      "In parietal placentation, ovules are borne on:",
+    optionA: "Central axis",
+    optionB: "Base of ovary",
+    optionC: "Inner wall of ovary",
+    optionD: "Ovary septa",
+    correctOption: "C" as const,
+    explanation:
+      "In parietal placentation (e.g., Argemone, Brassica), ovules develop on the inner wall or peripheral part of a unilocular ovary. Axile placentation has ovules on the central axis (multilocular ovary).",
+    tags: ["morphology", "placentation", "parietal", "ovary"],
+  },
+  {
+    subject: "BOTANY" as const,
+    chapter: "Respiration in Plants",
+    concept: "ETC and ATP synthesis",
+    year: 2024,
+    difficulty: "HARD" as const,
+    questionText:
+      "The total number of ATP molecules produced by complete oxidation of one glucose molecule (aerobic respiration) is approximately:",
+    optionA: "2",
+    optionB: "8",
+    optionC: "38",
+    optionD: "100",
+    correctOption: "C" as const,
+    explanation:
+      "Complete aerobic oxidation of glucose: Glycolysis (2 ATP net + 2 NADH) + Pyruvate oxidation (2 NADH) + Krebs cycle (2 ATP + 6 NADH + 2 FADH₂) + ETC (32-34 ATP). Total ≈ 36-38 ATP.",
+    tags: ["respiration", "ATP", "aerobic respiration", "ETC"],
+  },
+];

@@ -4,7 +4,19 @@
       "Bash(npx create-next-app@latest . --typescript --tailwind --app --no-src-dir --no-import-alias --turbopack)",
       "Bash(npm --version)",
       "Bash(export PATH=\"/usr/local/bin:/opt/homebrew/bin:$PATH\")",
-      "Bash(npx create-next-app@latest . --typescript --tailwind --app --no-src-dir --no-import-alias --turbopack --yes)"
+      "Bash(npx create-next-app@latest . --typescript --tailwind --app --no-src-dir --no-import-alias --turbopack --yes)",
+      "Bash(npm install:*)",
+      "Bash(npx prisma:*)",
+      "Bash(npx tsc:*)",
+      "Bash(cp \"/Users/muraliveesambattu/Documents/ClaudeCode_Projects/app2-neet/app/\\(student\\)/test/[attemptId]/page.tsx\" \"/Users/muraliveesambattu/Documents/ClaudeCode_Projects/app2-neet/app/student/test/[attemptId]/page.tsx\")",
+      "Bash(cp \"/Users/muraliveesambattu/Documents/ClaudeCode_Projects/app2-neet/app/\\(student\\)/test/[attemptId]/review/page.tsx\" \"/Users/muraliveesambattu/Documents/ClaudeCode_Projects/app2-neet/app/student/test/[attemptId]/review/page.tsx\")",
+      "Bash(export PATH=/usr/local/bin:/opt/homebrew/bin:$PATH)",
+      "Bash(psql postgresql://postgres:postgres@localhost:5432/neet_db -c \"SELECT subject, difficulty, COUNT\\(*\\) as count FROM \"\"Question\"\" WHERE \"\"isActive\"\" = true GROUP BY subject, difficulty ORDER BY subject, difficulty;\")",
+      "Bash(psql postgresql://postgres:postgres@localhost:5432/neet_db -c \"SELECT subject, COUNT\\(*\\) as total FROM \"\"Question\"\" WHERE \"\"isActive\"\" = true GROUP BY subject ORDER BY subject; SELECT COUNT\\(*\\) as grand_total FROM \"\"Question\"\" WHERE \"\"isActive\"\" = true;\")",
+      "Bash(DATABASE_URL=\"postgresql://neondb_owner:npg_N0EIyeW7ChvU@ep-twilight-cake-amxpcmbk.c-5.us-east-1.aws.neon.tech/neondb?sslmode=require\" npx prisma migrate deploy)",
+      "Bash(DATABASE_URL=\"postgresql://neondb_owner:npg_N0EIyeW7ChvU@ep-twilight-cake-amxpcmbk.c-5.us-east-1.aws.neon.tech/neondb?sslmode=require\" npm run db:seed)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ]
   }
 }
